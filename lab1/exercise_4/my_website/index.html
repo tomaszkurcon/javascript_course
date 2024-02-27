@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <!-- Zmień wartość "lang" z 'en' na 'pl' -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Js frameworks</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <!-- Navbar content -->
+      <ul class="menu d-flex">
+        <li class="active">
+          <a href="./">Home</a>
+        </li>
+        <li>
+          <a href="stats.html">Statistics</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="text-center">
+      <h1 class="display-2">Most popular js frameworks</h1>
+    </header>
+    <div class="frameworks-list mt-4 nav-fill d-flex justify-content-center">
+      <ul
+        class="nav text-center justify-content-center w-75 flex-column flex-sm-row gap-4 display-6"
+      >
+        <li class="nav-item">
+          <i class="fa-brands fa-react fa-2xl" style="color: #74c0fc"></i>
+          <a class="nav-link" href="https://react.dev/">React</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-brands fa-angular fa-2xl" style="color: #e21d58"></i>
+          <a class="nav-link" href="https://angular.io/docs">Angular</a>
+        </li>
+        <li class="nav-item">
+          <i class="fa-brands fa-vuejs fa-2xl" style="color: #51c894"></i>
+          <a class="nav-link" href="https://vuejs.org/guide/introduction.html"
+            >Vue</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5">
+      <div
+        class="d-flex flex-column-reverse flex-md-row-reverse gap-4 justify-content-center"
+      >
+        <aside>
+          <h3>Resources</h3>
+          <div class="ms-2">
+            <ul>
+              <li>
+                <a href="https://react.dev/">React</a>
+              </li>
+              <li>
+                <a href="https://angular.io/docs">Angular</a>
+              </li>
+              <li>
+                <a href="https://vuejs.org/guide/introduction.html">Vue</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <main>
+          <h1>Introduction</h1>
+          <blockquote>
+            Nowadays, there is an ever-growing number of JavaScript frameworks,
+            and it can indeed be hard to catch up. As the digital world
+            continues to evolve at a rapid pace, so does the landscape of
+            JavaScript frameworks. These tools have become the backbone of
+            modern web development, powering everything from interactive user
+            interfaces to complex single-page applications. In this article, we
+            will delve into the most popular JavaScript frameworks currently
+            dominating the industry. We’ll explore their unique features,
+            strengths, and weaknesses, and why developers choose them for their
+            projects. Whether you’re a seasoned developer looking to stay on top
+            of the latest trends, or a newcomer trying to navigate the vast sea
+            of options, this article aims to provide a comprehensive overview
+            that will help you make an informed decision in your next project.
+            Stay tuned as we embark on this journey through the dynamic world of
+            JavaScript frameworks.
+          </blockquote>
+          <a
+            href="#frameworks-container"
+            role="button"
+            class="btn btn-primary mt-2"
+            >Start reading</a
+          >
+        </main>
+      </div>
+      <hr class="my-5" />
+      <section id="frameworks-container" class="mt-5 d-flex flex-column gap-5">
+        <div class="react-container d-flex align-items-center">
+          <div class="item-content">
+            <h2>React</h2>
+            <blockquote>
+              <b>React</b> is a JavaScript library for building user interfaces,
+              both for web and native applications1. It allows developers to
+              construct UIs from individual pieces called components1. These
+              components are JavaScript functions that return what should appear
+              on the screen1. React is designed to let you seamlessly combine
+              components written by different people, teams, and organizations.
+            </blockquote>
+          </div>
+        </div>
+        <div
+          class="angular-container d-flex mt-5 justify-content-xl-end align-items-center"
+        >
+          <div class="item-content">
+            <h2>Angular</h2>
+            <blockquote>
+              <b>Angular</b> is a development platform built on TypeScript,
+              designed for building scalable web applications1. It includes a
+              component-based framework and a collection of well-integrated
+              libraries that cover a wide variety of features, including
+              routing, forms management, and client-server communication
+            </blockquote>
+          </div>
+        </div>
+        <div class="vue-container d-flex align-items-center">
+          <div class="item-content">
+            <h2>Vue</h2>
+            <blockquote>
+              <b>Vue.js</b>, often simply referred to as Vue, is an open-source
+              JavaScript framework for building interactive web user
+              interfaces1. Created by Evan You in 2014, Vue.js is known for its
+              simplicity and performance1. Vue.js is designed to be
+              incrementally adoptable, meaning you can use as much or as little
+              of the framework as you need2. The core library focuses on the
+              view layer only, making it easy to pick up and integrate with
+              other libraries or existing projects2.
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <span>Made by TK</span>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/36419b9715.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

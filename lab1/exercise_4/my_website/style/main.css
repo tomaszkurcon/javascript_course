@@ -1,0 +1,124 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.navbar {
+  justify-content: flex-end;
+  padding: 15px;
+  font-size: x-large;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.active {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.menu {
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  margin: 0px;
+}
+header {
+  margin: 30px 0px;
+}
+
+.frameworks-list {
+  height: max-content;
+  padding: 30px 0px;
+  background-color: rgba(166, 92, 235, 0.212);
+  width: 100vw;
+}
+
+.frameworks-list ul li:nth-child(1) {
+  animation: iconBounce 3s infinite;
+}
+.frameworks-list ul li:nth-child(2) {
+  animation: iconBounce 3s infinite;
+  animation-delay: 1s;
+}
+.frameworks-list ul li:nth-child(3) {
+  animation: iconBounce 3s infinite;
+  animation-delay: 2s;
+}
+.react-container {
+  background-image: url("../img/react-logo.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
+.angular-container {
+  background-image: url("../img/angular-logo.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  background-size: contain;
+}
+.vue-container {
+  background-image: url("../img/vue-logo.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
+.react-container i {
+  font-size: 60vh;
+}
+.item-content {
+  background-color: rgba(255, 255, 255, 0.842);
+}
+.footer {
+  background-color: rgba(166, 92, 235, 0.212);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+@keyframes iconBounce {
+  16% {
+    transform: scale(1.1);
+  }
+  32% {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    width: 75%;
+  }
+  .navbar {
+    padding-right: 80px;
+  }
+  .react-container {
+    padding-left: 250px;
+  }
+  .vue-container {
+    padding-left: 250px;
+  }
+  .angular-container .item-content {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .react-container {
+    padding-left: 250px;
+  }
+
+  .angular-container {
+    background-position: 40%, 100%;
+  }
+  .angular-container .item-content {
+    width: 50%;
+  }
+  .vue-container {
+    padding-left: 250px;
+  }
+  .item-content {
+    width: 50%;
+  }
+}
