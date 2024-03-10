@@ -1,0 +1,26 @@
+<!--window.prompt args are optional
+prompt(message, defaultValue)
+message Optional
+A string of text to display to the user. Can be omitted if there is nothing to show in the prompt window.
+
+defaultValue Optional
+A string containing the default value displayed in the text input field.
+-->
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Plik 'zadanie1C.html'</title>
+    <script src="zadanie1.js"></script>
+  </head>
+  <body>
+    <form>
+      <input id="pole_tekstowe" type="text" placeholder="Wprowadź tekst">
+      +
+      <input id="pole_liczbowe" type="number" placeholder="Wprowadź liczbę">    
+      =
+      <output name="wynik" for="pole_tekstowe pole_liczbowe">Tu pojawi się wynik obliczeń</output>    
+      <br>    
+      <input type="button" value="Wypisz" onclick="funkcja_zwrotna()">
+    </form>
+  </body>
+</html>

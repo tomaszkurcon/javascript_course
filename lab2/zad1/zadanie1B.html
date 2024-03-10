@@ -1,0 +1,20 @@
+<!-- The issue is that when you run document.write after the document has loaded, it overwrites the entire document. If it is run before that, it does not overwrite it. -->
+<!-- 
+As I mentioned before, a document needs to be opened for writing before it is written to. In theory, we could either append to the existing content or just overwrite it. Well, if we append to the content, we'll end up with an invalid html page because the new values will appear after the closing tags. So the more sensible behavior is to overwrite the content and that's exactly what happens. -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Plik 'zadanie1B.html'</title>
+</head>
+<body onLoad="funkcja_zwrotna()">
+    <div>Treść dokumentu HTML przed skryptem</div>
+    <script>
+        function funkcja_zwrotna() {
+            console.log('Tekst 1');
+            window.alert('Tekst 2');
+            document.write('Tekst 3');
+        }
+    </script>
+    <div>Treść dokumentu HTML po skrypcie</div>
+</body>
+</html>
