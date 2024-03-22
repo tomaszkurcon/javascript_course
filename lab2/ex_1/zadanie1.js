@@ -17,3 +17,4 @@ const prompt_fn = () => {
     console.log("Wczytana wartość: ", typeof value);
   }
 };
+prompt_fn();
