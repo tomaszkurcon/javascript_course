@@ -1,0 +1,19 @@
+.counter-container {
+  background-color: #d7e4d6;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.counter {
+  font-size: 4vh;
+  color: red;
+}
+.start {
+  margin-right: 10px;
+}
+
+.counter-list {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
