@@ -144,12 +144,14 @@ openDb()
       }
       const { username, book_name } = parsed_data;
       const user = await getObject("user", username, db);
+      const book = await getObject("book", book_name, db);
       try {
         if (!user) throw new Error(`User ${username} doesn't exist`);
+        if(!book) throw new Error(`Book ${book_name} doesn't exist`);
         const rental_record = await getData(
           "rental",
           db,
-          [["username", (p_username) => p_username === user.username]],
+          [["username", (p_username) => p_username === user.username], ["book_name", (p_book_name) => p_book_name === book.book_name]],
           true
         );
         if (rental_record.length) {
@@ -161,11 +163,10 @@ openDb()
           await updateObject("book", book, db);
           console.log("You have succesfully returned book :)");
         } else {
-          console.log(
+          console.error(
             username,
             " hasn't borrowed book: ",
-            book_name,
-            " or such book doesn't exist"
+            book_name
           );
         }
       } catch (err) {
@@ -224,4 +225,6 @@ openDb()
     }
   })
   .catch((err) => console.error(err));
+
+
 
