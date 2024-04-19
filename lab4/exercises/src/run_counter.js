@@ -6,7 +6,7 @@ import {
   readFileSync,
 } from "node:fs";
 import { argv } from "node:process";
-import { exec, spawn } from "node:child_process";
+import { exec } from "node:child_process";
 import readline from "node:readline";
 
 if (!existsSync("licznik.txt")) {

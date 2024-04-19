@@ -2,3 +2,4 @@
 *.rar
 node_modules
 out
+*.txt

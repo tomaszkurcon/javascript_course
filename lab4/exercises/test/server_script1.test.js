@@ -3,8 +3,9 @@
 // Modified by Stanisław Polak <polak@agh.edu.pl>
 
 // const supertest = require('supertest');
-import supertest from "supertest";
 
+// import supertest from "supertest";
+const supertest = require("supertest");
 // This agent refers to PORT where program is runninng.
 const server = supertest.agent("http://localhost:8000");
 
