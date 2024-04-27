@@ -1,34 +1,12 @@
 import { API_URL } from "../../config";
+import { borrow_book, return_book } from "../api/books";
 import ButtonModal from "./ButtonModal";
 
 
 const Book = ({ book_data }) => {
   const { book_name, authors, faculty, subject, imgURL, amount } = book_data;
 
-  const return_book = async (book_name, username) => {
-    const response = await fetch(`${API_URL}/return_book`, {
-      method: "POST",
-      body: JSON.stringify({ book_name: book_name, username: username }),
-    });
-    if (response.ok) {
-      alert("Pomyślnie zwrócono książkę");
-      window.location.reload();
-    } else {
-      alert("Nie udało się zwrócić książki");
-    }
-  };
-  const borrow_book = async (book_name, username) => {
-    const response = await fetch(`${API_URL}/borrow_book`, {
-      method: "POST",
-      body: JSON.stringify({ book_name: book_name, username: username }),
-    });
-    if (response.ok) {
-      alert("Pomyślnie wypożyczono książkę");
-      window.location.reload();
-    } else {
-      alert("Nie udało się wypożyczyć książki");
-    }
-  };
+
 
   const show_book_readers = async (book_name) => {
     const response = await fetch(`${API_URL}/show_book_readers?book_name=` + encodeURIComponent(book_name));
